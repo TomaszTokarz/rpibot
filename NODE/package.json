@@ -14,8 +14,6 @@
     "raspi": "^5.0.2",
     "raspi-gpio": "^6.0.0",
     "raspi-pwm": "^6.0.0",
-    "bleno": "^0.5.0",
-    "express": "^4.16.4",
     "socket.io": "^2.1.1"
   }
 }

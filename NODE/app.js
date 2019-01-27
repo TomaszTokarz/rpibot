@@ -4,15 +4,10 @@ const {drive} = require('./modules/drive/drive');
 
 var app = {
     init: function() {
-        // drive(0.5, 0.5);
-
         this.runSocket();
-        // ble.init();
     },
 
     runSocket: function() {
-        // var express = require('express')();
-        // var server = require('http').createServer(express);
         var server = require('http').createServer();
 
         var io = require('socket.io')(server);
@@ -25,7 +20,10 @@ var app = {
             }) 
         });
 
-        
+        socket.on('disconnect', function() {
+            console.log('disconnected');
+         });
+
         server.listen(3000);
     }
 };
