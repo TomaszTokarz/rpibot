@@ -1,7 +1,7 @@
 {
   "name": "rpibot",
   "version": "0.0.1",
-  "description": "Raspberry pi car project",
+  "description": "Raspberry pi car project - NODE",
   "main": "js/app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

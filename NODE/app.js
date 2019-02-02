@@ -17,12 +17,14 @@ var app = {
 
             socket.on('drive', function(data) {
                 drive(data.throttle, data.turning);
-            }) 
+            });
+
+            socket.on('disconnect', function() {
+                console.log('disconnected');
+             });
         });
 
-        socket.on('disconnect', function() {
-            console.log('disconnected');
-         });
+        
 
         server.listen(3000);
     }
